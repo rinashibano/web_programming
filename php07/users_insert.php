@@ -31,7 +31,7 @@ $stmt->bindValue(":life_flg", $life_flg);
 
 
 //5. SQL実行
-$stmt->execute();
+$status = $stmt->execute();
 
 //6. 画面遷移(select.php)
 if($status==false) {
